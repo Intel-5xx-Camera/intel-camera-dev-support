@@ -1,0 +1,15 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: libutils
+Description: Android dependencies to build camera HAL
+URL: http://www.intel.com
+Version: @VERSION@
+Libs: -L${libdir}/ -lutils
+Cflags: -I${includedir}/androidheaders/ \
+        -I${includedir}/androidheaders/system/ \
+        -I${includedir}/androidheaders/system/core/include/ \
+        -I${includedir}/androidheaders/system/media/private/camera/include/
+
